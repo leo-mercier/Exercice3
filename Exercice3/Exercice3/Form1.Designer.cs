@@ -82,6 +82,7 @@
             this.btnSoustraire.TabIndex = 4;
             this.btnSoustraire.Text = "Soustraire";
             this.btnSoustraire.UseVisualStyleBackColor = true;
+            this.btnSoustraire.Click += new System.EventHandler(this.btnSoustraire_Click);
             // 
             // btnAddition
             // 
@@ -101,6 +102,7 @@
             this.btnDiviser.TabIndex = 6;
             this.btnDiviser.Text = "Diviser";
             this.btnDiviser.UseVisualStyleBackColor = true;
+            this.btnDiviser.Click += new System.EventHandler(this.btnDiviser_Click);
             // 
             // btnMultiplier
             // 
@@ -110,6 +112,7 @@
             this.btnMultiplier.TabIndex = 7;
             this.btnMultiplier.Text = "Multiplier";
             this.btnMultiplier.UseVisualStyleBackColor = true;
+            this.btnMultiplier.Click += new System.EventHandler(this.btnMultiplier_Click);
             // 
             // txtResult
             // 

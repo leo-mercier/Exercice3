@@ -7,3 +7,4 @@ C:\Users\gta97\Desktop\Session3\Objet2\Exercice3\Exercice3\Exercice3\obj\Debug\E
 C:\Users\gta97\Desktop\Session3\Objet2\Exercice3\Exercice3\Exercice3\obj\Debug\Exercice3.csproj.CoreCompileInputs.cache
 C:\Users\gta97\Desktop\Session3\Objet2\Exercice3\Exercice3\Exercice3\obj\Debug\Exercice3.exe
 C:\Users\gta97\Desktop\Session3\Objet2\Exercice3\Exercice3\Exercice3\obj\Debug\Exercice3.pdb
+C:\Users\gta97\Desktop\Session3\Objet2\Exercice3\Exercice3\Exercice3\obj\Debug\Exercice3.Form1.resources
