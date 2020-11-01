@@ -31,8 +31,12 @@ namespace Exercice3
 
         private void btnAddition_Click(object sender, EventArgs e)
         {
-            calculator = new Calculator(int.Parse(txtVal1.Text), int.Parse(txtVal2.Text));
-            txtResult.Text = (calculator.NB1 + calculator.NB2).ToString();
+            if (verifierTextbox())
+            {
+                calculator = new Calculator(int.Parse(txtVal1.Text), int.Parse(txtVal2.Text));
+                txtResult.Text = (calculator.NB1 + calculator.NB2).ToString();
+            }
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -42,20 +46,43 @@ namespace Exercice3
 
         private void btnDiviser_Click(object sender, EventArgs e)
         {
-            calculator = new Calculator(int.Parse(txtVal1.Text), int.Parse(txtVal2.Text));
-            txtResult.Text = (calculator.NB1 / calculator.NB2).ToString();
+            if (verifierTextbox())
+            {
+                calculator = new Calculator(int.Parse(txtVal1.Text), int.Parse(txtVal2.Text));
+                txtResult.Text = (calculator.NB1 / calculator.NB2).ToString();
+            }
         }
 
         private void btnMultiplier_Click(object sender, EventArgs e)
         {
-            calculator = new Calculator(int.Parse(txtVal1.Text), int.Parse(txtVal2.Text));
-            txtResult.Text = (calculator.NB1 * calculator.NB2).ToString();
+            if (verifierTextbox())
+            {
+                calculator = new Calculator(int.Parse(txtVal1.Text), int.Parse(txtVal2.Text));
+                txtResult.Text = (calculator.NB1 * calculator.NB2).ToString();
+            }
         }
 
         private void btnSoustraire_Click(object sender, EventArgs e)
         {
-            calculator = new Calculator(int.Parse(txtVal1.Text), int.Parse(txtVal2.Text));
-            txtResult.Text = (calculator.NB1 - calculator.NB2).ToString();
+            if (verifierTextbox())
+            {
+                calculator = new Calculator(int.Parse(txtVal1.Text), int.Parse(txtVal2.Text));
+                txtResult.Text = (calculator.NB1 - calculator.NB2).ToString();
+            }
+        }
+
+        private bool verifierTextbox()
+        {
+            if (txtVal1.Text != "" && txtVal2.Text != "")
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("Rentre une valeur!");
+                return false;
+            }
+            
         }
     }
 }
