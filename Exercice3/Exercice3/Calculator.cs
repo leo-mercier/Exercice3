@@ -17,6 +17,26 @@ namespace Exercice3
         }
 
 
+        public static int operator +(int numerateur, int denominateur)
+        {
+            return numerateur + denominateur;
+        }
+
+        public static int operator /(int numerateur, int denominateur)
+        {
+            return numerateur / denominateur;
+        }
+
+        public static int operator -(int numerateur, int denominateur)
+        {
+            return numerateur - denominateur;
+        }
+
+        public static int operator *(int numerateur, int denominateur)
+        {
+            return numerateur * denominateur;
+        }
+
 
     }
 }
